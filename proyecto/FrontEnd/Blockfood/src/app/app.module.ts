@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './rutas/home/home.component';
 import { RutaMenuComponent } from './rutas/ruta-menu/ruta-menu.component';
 import { RutaLoginComponent } from './rutas/ruta-login/ruta-login.component';
+import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear-usuario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RutaMenuComponent,
-    RutaLoginComponent
+    RutaLoginComponent,
+    RutaCrearUsuarioComponent
   ],
   imports: [
     BrowserModule,
