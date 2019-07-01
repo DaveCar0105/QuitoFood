@@ -41,4 +41,37 @@ body {
     background: dodgerblue;
     color: #000;
   }
-  
+.create h1 {
+  margin: 0;
+  top: 25%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+}
+.create input[type="submit"] {
+  border: none;
+  outline: none;
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  transform: translate(-50, -50%);
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.create input {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.create input[type="submit"]:hover {
+  cursor: pointer;
+  background: dodgerblue;
+  color: #000;
+}
