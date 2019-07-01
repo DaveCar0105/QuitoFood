@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+//import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +9,8 @@ import { HomeComponent } from './rutas/home/home.component';
 import { RutaMenuComponent } from './rutas/ruta-menu/ruta-menu.component';
 import { RutaLoginComponent } from './rutas/ruta-login/ruta-login.component';
 import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear-usuario.component';
+import { RutaBlogComponent } from './rutas/ruta-blog/ruta-blog.component';
+
 
 @NgModule({
   declarations: [
@@ -14,13 +18,20 @@ import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear
     HomeComponent,
     RutaMenuComponent,
     RutaLoginComponent,
-    RutaCrearUsuarioComponent
+    RutaCrearUsuarioComponent,
+    RutaBlogComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //BrowserAnimationsModule,
+    //MatFormFieldModule,
+
+ 
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
