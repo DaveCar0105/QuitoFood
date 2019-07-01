@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ruta-blog.component.scss']
 })
 export class RutaBlogComponent implements OnInit {
+  saveBlog(){
+    alert("Blog guardado con exito");
+  }
+  constructor() {
 
-  constructor() { }
+  }
 
   ngOnInit() {
+
+
+
   }
 
 }
