@@ -12,6 +12,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proyecto/FrontEnd/Blockfood/src/app/rutas/home/home.component.scss">
@@ -59,6 +62,7 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> 0c0cf5257f4cb8796aac23dabe301a7cac6927e8
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,6 +108,8 @@
               <item name="QuitoFood" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuitoFood" type="462c0819:PsiDirectoryNode" />
               <item name="proyecto" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
               <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -123,6 +129,7 @@
               <item name="QuitoFood" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuitoFood" type="462c0819:PsiDirectoryNode" />
               <item name="proyecto" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 0c0cf5257f4cb8796aac23dabe301a7cac6927e8
               <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
               <item name="Blockfood" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -136,6 +143,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
             <path>
               <item name="QuitoFood" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuitoFood" type="462c0819:PsiDirectoryNode" />
@@ -168,6 +177,7 @@
               <item name="rutas" type="462c0819:PsiDirectoryNode" />
               <item name="ruta-login" type="462c0819:PsiDirectoryNode" />
             </path>
+>>>>>>> 0c0cf5257f4cb8796aac23dabe301a7cac6927e8
           </expand>
           <select />
         </subPane>
@@ -227,7 +237,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="19240000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="14416000" />
+=======
+    <option name="totallyTimeSpent" value="16453000" />
+>>>>>>> 0c0cf5257f4cb8796aac23dabe301a7cac6927e8
+>>>>>>> 21bdb4c4056dbb903cb8a3d40847d660542aad5f
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -244,7 +262,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32998884" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32936078" />
+>>>>>>> 21bdb4c4056dbb903cb8a3d40847d660542aad5f
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
