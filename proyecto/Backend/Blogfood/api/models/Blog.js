@@ -19,8 +19,8 @@ module.exports = {
     
     contenido:{
       type:'string',
-      isEmail: true,
-      unique: true,
+
+
       required: true
     },
 
