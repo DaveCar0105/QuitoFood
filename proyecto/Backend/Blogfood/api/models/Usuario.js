@@ -30,6 +30,12 @@ module.exports = {
       
     },
 
+    blogs:{
+      collection:'blog',
+      via:'autor',
+
+    },
+
   },
 
 };

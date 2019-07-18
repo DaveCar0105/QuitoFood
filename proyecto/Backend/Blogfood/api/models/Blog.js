@@ -29,7 +29,12 @@ module.exports = {
       min: 1,
       max: 5,
       required: true,
-    }
+    },
+    autor:{
+      model:'usuario',
+
+    },
+
   }
 };
 
