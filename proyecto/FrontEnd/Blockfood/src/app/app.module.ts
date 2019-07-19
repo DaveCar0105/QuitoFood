@@ -10,6 +10,8 @@ import { RutaMenuComponent } from './rutas/ruta-menu/ruta-menu.component';
 import { RutaLoginComponent } from './rutas/ruta-login/ruta-login.component';
 import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear-usuario.component';
 import { RutaBlogComponent } from './rutas/ruta-blog/ruta-blog.component';
+import { CuentaUserComponent } from './cuenta-user/cuenta-user.component';
+import { MostrarBlogsComponent } from './rutas/mostrar-blogs/mostrar-blogs.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { RutaBlogComponent } from './rutas/ruta-blog/ruta-blog.component';
     RutaLoginComponent,
     RutaCrearUsuarioComponent,
     RutaBlogComponent,
+    CuentaUserComponent,
+    MostrarBlogsComponent,
   ],
   imports: [
     BrowserModule,

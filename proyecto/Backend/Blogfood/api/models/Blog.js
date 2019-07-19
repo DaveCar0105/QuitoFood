@@ -34,6 +34,16 @@ module.exports = {
       model:'usuario',
 
     },
+    /*imagen:{
+      type: 'string',
+      required: true,
+
+    },
+    direccion:{
+      type: 'string',
+      required: true,
+    },
+    */
 
   }
 };
