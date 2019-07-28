@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogRestService } from 'src/app/services/blog-rest.service';
+import { Blog } from 'src/app/interfaces/blog';
+import { UsuarioRestService } from 'src/app/services/usuario-rest.service';
+import { Usuario } from 'src/app/interfaces/user';
 
 @Component({
   selector: 'app-ruta-blog',
@@ -6,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ruta-blog.component.scss']
 })
 export class RutaBlogComponent implements OnInit {
+
   saveBlog(){
     alert("Blog guardado con exito");
   }
@@ -30,12 +35,38 @@ export class RutaBlogComponent implements OnInit {
   blogs = ["pedro","juan","maria"]
   
   
-  constructor() {
+  constructor(
+    private readonly _blogRestService: BlogRestService,
+    private readonly _usuarioRestService: UsuarioRestService
+  ) {
+
 
   }
 
   ngOnInit() {
+
+    const blogs$ = this._blogRestService.findAll();
     
+    blogs$
+    .subscribe(
+      (blogs : Blog[])=>{
+        console.log(blogs);
+      },
+      (error)=>{
+        console.log('Error'+error);
+      }
+    )
+    
+    const users$ = this._usuarioRestService.findAll();
+    users$
+    .subscribe(
+      (users : Usuario[])=>{
+        console.log(users);
+      },
+        (error)=>{
+            console.log('error'+error);   
+        }
+    )
 
 
   }

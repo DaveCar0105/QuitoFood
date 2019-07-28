@@ -9,6 +9,8 @@ import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear
 import { RutaBlogComponent } from './rutas/ruta-blog/ruta-blog.component';
 import { MostrarBlogsComponent } from './rutas/mostrar-blogs/mostrar-blogs.component';
 import {HttpClientModule} from '@angular/common/http';
+import { BlogRestService } from './services/blog-rest.service';
+import { UsuarioRestService } from './services/usuario-rest.service';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,13 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+   
 
   ],
   providers: [
+    BlogRestService,
+    UsuarioRestService
 
   ],
   bootstrap: [AppComponent]

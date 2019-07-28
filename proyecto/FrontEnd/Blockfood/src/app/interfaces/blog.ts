@@ -1,4 +1,4 @@
-export interface blog{
+export interface Blog{
 
     titulo?:string,
     contenido?:string,

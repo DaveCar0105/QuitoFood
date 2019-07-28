@@ -29,13 +29,13 @@ module.exports = {
       required: true,
       
     },
-
+/*
     blogs:{
       collection:'blog',
       via:'autor',
 
     },
-
+*/
   },
 
 };
