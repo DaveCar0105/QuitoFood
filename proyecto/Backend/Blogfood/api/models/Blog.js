@@ -19,8 +19,6 @@ module.exports = {
     
     contenido:{
       type:'string',
-
-
       required: true
     },
 
@@ -30,11 +28,14 @@ module.exports = {
       max: 5,
       required: true,
     },
+    
+    
+    /*
     autor:{
       model:'usuario',
 
     },
-    /*imagen:{
+    imagen:{
       type: 'string',
       required: true,
 

@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
 </head>
+
 <body>
-
+    <app-ruta-menu> </app-ruta-menu>
+    <!-- <RutaMenuComponent> </RutaMenuComponent> -->
 <div class="login-box">
-  <h1>Crea un nuevo post</h1>
 
+  <h1>Crea un nuevo post</h1>  
   <h2>
     <!-- TITULO INPUT -->
     <label for="tittle">Titulo</label>
@@ -23,7 +25,7 @@
   <label for="Puntuacion">Puntuacion</label>
   <input type="Puntuacion" placeholder="Enter Puntuacion">
 
-
+    
   <button (click)="saveBlog()">
     Guardar
   </button>
