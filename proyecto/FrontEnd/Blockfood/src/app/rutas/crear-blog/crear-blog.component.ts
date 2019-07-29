@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Blog } from 'src/app/interfaces/blog';
 import { BlogRestService } from 'src/app/services/blog-rest.service';
 
@@ -9,11 +9,12 @@ import { BlogRestService } from 'src/app/services/blog-rest.service';
 })
 export class CrearBlogComponent implements OnInit {
 
+  @HostBinding ('class') classes = 'row';
   blog: Blog = {
     id:0,
     titulo:'',
     contenido:'',
-    puntuacion: 2,
+    puntuacion: 0,
     imagen:''
 
   }
