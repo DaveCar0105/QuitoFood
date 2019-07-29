@@ -17,7 +17,7 @@ export class BlogRestService {
 
         }
 
-    findAll(): Observable <Blog[]> {
+    findAllBlogs(): Observable <Blog[]> {
 
         const blogs$ = this._httpClient
         .get(environment.url + this.nombreModelo)
@@ -25,8 +25,12 @@ export class BlogRestService {
             map(r => <Blog[]> r));
         return blogs$;
     }
+
+    saveGame(blog: Blog) {
+        return this._httpClient.post(environment.url+this.nombreModelo, blog);
+      }
     
-    
+
 
 
 

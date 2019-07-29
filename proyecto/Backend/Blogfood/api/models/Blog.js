@@ -26,23 +26,22 @@ module.exports = {
       type: 'number',
       min: 1,
       max: 5,
-      required: true,
+      required: false,
     },
     
-    
-    /*
-    autor:{
-      model:'usuario',
-
-    },
     imagen:{
       type: 'string',
       required: true,
 
     },
+    /*
     direccion:{
       type: 'string',
       required: true,
+    },
+    autor:{
+      model:'usuario',
+
     },
     */
 

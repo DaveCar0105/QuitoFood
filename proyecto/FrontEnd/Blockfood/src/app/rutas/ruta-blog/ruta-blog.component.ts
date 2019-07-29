@@ -11,29 +11,8 @@ import { Usuario } from 'src/app/interfaces/user';
 })
 export class RutaBlogComponent implements OnInit {
 
-  saveBlog(){
-    alert("Blog guardado con exito");
-  }
 
-    /*blogs = [
-      {
-      autor:"rommel",
-      descripcion: "son las mejores papas",
-      puntuacion: 5
-      }, 
-      {
-      autor:"alex",
-      descripcion: "los mejores sanduches",
-      puntuacion: 10
-      },
-      {
-      autor:"david",
-      descripcion: "nada de malo en el restaurant",
-      puntuacion: 4
-      },
-  ]*/
-  blogs = ["pedro","juan","maria"]
-  
+  blogs:any = [];
   
   constructor(
     private readonly _blogRestService: BlogRestService,
@@ -45,19 +24,21 @@ export class RutaBlogComponent implements OnInit {
 
   ngOnInit() {
 
-    const blogs$ = this._blogRestService.findAll();
+    const blogs$ = this._blogRestService.findAllBlogs();
     
     blogs$
     .subscribe(
       (blogs : Blog[])=>{
         console.log(blogs);
+        this.blogs = blogs;
       },
       (error)=>{
         console.log('Error'+error);
+
       }
     )
     
-    const users$ = this._usuarioRestService.findAll();
+    const users$ = this._usuarioRestService.findAllUsers();
     users$
     .subscribe(
       (users : Usuario[])=>{
@@ -67,7 +48,6 @@ export class RutaBlogComponent implements OnInit {
             console.log('error'+error);   
         }
     )
-
 
   }
 

@@ -1,47 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-</head>
 
-<body>
-    <app-ruta-menu> </app-ruta-menu>
-    <!-- <RutaMenuComponent> </RutaMenuComponent> -->
-<div class="login-box">
+<app-ruta-menu> </app-ruta-menu>
 
-  <h1>Crea un nuevo post</h1>  
-  <h2>
-    <!-- TITULO INPUT -->
-    <label for="tittle">Titulo</label>
-    <input type="text" placeholder="Enter title">
+<div class="col-md-4" *ngFor="let blog of blogs">
+    <div class="card text-center">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+        {{blog.titulo}}
+        <button class="btn btn-danger" >
+          <i class="far fa-trash-alt"></i>
+        </button>
+      </div>
+      <img class="card-img-top" [src]="blog.imagen">
+      <div class="card-body">
+        <p>{{blog.contenido}}</p>
+        <!-- <p>Created At {{game.created_at | date: 'yyyy-MM-dd'}}</p> -->
+        <a routerLink= '*' class="btn btn-info btn-block">
+          EDIT GAME
+        </a>
+      </div>
+    </div>
+  </div>
 
-    <img src="https://i.blogs.es/36938e/istock-840527124/450_1000.jpg" class="img-fluid" alt="Responsive image">
-  </h2>
-
-  <!-- DESCRIPCION INPUT -->
-  <label for="description">Descripcion</label>
-  <input type="Descripcion" placeholder="Enter description">
-  <!-- PUNTUACION INPUT -->
-  <label for="Puntuacion">Puntuacion</label>
-  <input type="Puntuacion" placeholder="Enter Puntuacion">
-
-    
-  <button (click)="saveBlog()">
-    Guardar
-  </button>
-
-  <a routerLink="/mostrarBlog">
-    <input type="submit" value="Sign in">
-  </a>
-
-</div>
-<ul>
-  <li *ngFor= "let blog of blogs">
-    {{blog}}
-  </li>
-</ul>
-
-</body>
-</html>
 
 

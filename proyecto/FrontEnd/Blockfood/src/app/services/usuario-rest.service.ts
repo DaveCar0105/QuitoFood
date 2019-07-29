@@ -13,7 +13,8 @@ import { map } from 'rxjs/operators';
 
         constructor(private readonly _httpClient: HttpClient){
         }
-    findAll(): Observable <Usuario[]>{
+    
+        findAllUsers(): Observable <Usuario[]>{
 
         const users$ = this._httpClient
         .get(environment.url + this.nombreModelo)

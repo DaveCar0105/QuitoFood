@@ -6,6 +6,7 @@ import {RutaLoginComponent} from "./rutas/ruta-login/ruta-login.component";
 import { RutaCrearUsuarioComponent } from './rutas/ruta-crear-usuario/ruta-crear-usuario.component';
 import { RutaBlogComponent } from './rutas/ruta-blog/ruta-blog.component';
 import { MostrarBlogsComponent} from "./rutas/mostrar-blogs/mostrar-blogs.component";
+import { CrearBlogComponent } from './rutas/crear-blog/crear-blog.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'mostrarBlog',
     component: MostrarBlogsComponent,
+  },
+  {
+    path: 'addBlog',
+    component: CrearBlogComponent,
   },
   {
     path: '**',
