@@ -65,6 +65,4 @@ export class RutaBlogComponent implements OnInit {
       }
    )       
   }
-  
-
 }
