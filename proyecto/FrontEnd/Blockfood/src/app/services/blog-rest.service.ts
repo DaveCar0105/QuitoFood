@@ -30,6 +30,12 @@ export class BlogRestService {
         return this._httpClient.post(environment.url+this.nombreModelo, blog);
       }
     
+    deleteBlog(id : number){
+        return this._httpClient.delete(environment.url+`/${id}`)
+        .pipe(map(r => <Blog> r));
+
+    }
+    
 
 
 

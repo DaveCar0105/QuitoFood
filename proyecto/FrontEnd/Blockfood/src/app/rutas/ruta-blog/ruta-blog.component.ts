@@ -51,5 +51,20 @@ export class RutaBlogComponent implements OnInit {
     )
 
   }
+  
+  deleteBlog(id : number){
+    console.log(id+'y ver si funciona');
+
+    this._blogRestService.deleteBlog(id)
+    .subscribe(
+      (req)=>{
+      console.log(req);
+    },
+      (error)=>{
+          console.log('error'+error);   
+      }
+   )       
+  }
+  
 
 }
