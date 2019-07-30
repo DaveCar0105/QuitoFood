@@ -25,19 +25,8 @@ export class RutaBlogComponent implements OnInit {
 
   ngOnInit() {
 
-    const blogs$ = this._blogRestService.findAllBlogs();
-    
-    blogs$
-    .subscribe(
-      (blogs : Blog[])=>{
-        console.log(blogs);
-        this.blogs = blogs;
-      },
-      (error)=>{
-        console.log('Error'+error);
+    this.getBlogs(); 
 
-      }
-    )
     
     const users$ = this._usuarioRestService.findAllUsers();
     users$
@@ -51,7 +40,25 @@ export class RutaBlogComponent implements OnInit {
     )
 
   }
-  
+  getBlogs(){
+
+    
+    const blogs$ = this._blogRestService.findAllBlogs();
+    
+    blogs$
+    .subscribe(
+      (blogs : Blog[])=>{
+        console.log(blogs);
+        this.blogs = blogs;
+      },
+      (error)=>{
+        console.log('Error'+error);
+
+      }
+    )
+
+
+  }
   deleteBlog(id : number){
     console.log(id+'y ver si funciona');
 
@@ -59,6 +66,7 @@ export class RutaBlogComponent implements OnInit {
     .subscribe(
       (req)=>{
       console.log(req);
+      this.getBlogs();
     },
       (error)=>{
           console.log('error'+error);   
